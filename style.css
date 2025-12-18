@@ -1,20 +1,22 @@
 *,
 body {
-  background-color: #c7c8cc;
-  font-family: "Comic Relief", sistem-ui;
+  /* background-color: #c7c8cc; */
+  font-family: "Lato", sans-serif;
+  user-select: none;
 }
 
-.t1 {
+/* .t1 {
   color: #52524e;
 }
 
 .t2 {
   color: #52575d;
-}
+} */
 
 .custom-border {
-  border-color: #52575d;
+  border-color: #797979;
   /* background-color: #f2efe5; */
   border-width: 1px;
-  box-shadow: 4px 4px 2px 1px #52524e;
+  border-style: dashed;
+  /* box-shadow: 4px 4px 2px 1px #52524e; */
 }

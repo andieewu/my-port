@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="style.css" />
 
     <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -32,22 +29,26 @@
           <div
             class="w-[120px] h-[120px] mx-auto mb-2 sm:mb-4 rounded-full bg-[url('img/profile.jpg')] bg-cover bg-center transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0"
           ></div>
-          <h1 class="text-3xl font-bold t1 sm:text-4xl">Andika Wisnumurti</h1>
+          <h1 class="text-3xl font-bold t1 sm:text-5xl md:text-6xl">
+            Andika Wisnumurti
+          </h1>
 
-          <div class="mt-2 sm:mt-4 flex justify-center gap-3 sm:gap-6">
+          <div
+            class="mt-2 sm:mt-4 flex justify-center gap-3 sm:gap-6 text-gray-400 font-semibold"
+          >
             <p
-              class="px-2 text-[12px] sm:text-base t2 custom-border rounded-md"
+              class="px-2 text-[14px] sm:text-base border border-gray-400 rounded-lg hover:border-black hover:text-black"
             >
               Junior Web Developer
             </p>
             <p
-              class="px-2 text-[12px] sm:text-base t2 custom-border rounded-md"
+              class="px-2 text-[14px] sm:text-base border border-gray-400 rounded-lg hover:border-black hover:text-black"
             >
               Fresh Graduate
             </p>
           </div>
 
-          <p class="mt-4 t2">
+          <p class="mt-2 sm:mt-4 t2">
             An 18-year-old aspiring developer with junior-level experience in
             frontend and backend development, currently exploring AI and machine
             learning.
@@ -56,30 +57,30 @@
           <div class="mt-4">
             <a
               href="mailto:wisnumurtiandika@gmail.com"
-              class="px-5 py-1 font-semibold t1 hover:underline"
+              class="p-2 font-semibold underline text-gray-400 hover:text-black"
             >
-              Want to collaborate? click here!
+              Get in touch!
             </a>
           </div>
 
           <div class="mt-4 flex justify-center gap-6">
-            <h1
-              class="px-4 text-base text-center mb-6 t1 custom-border rounded-full"
-            >
-              ...
-            </h1>
+            <h1 class="px-4 text-base text-center mb-6">...</h1>
           </div>
         </div>
       </section>
 
       <!-- PLAYLIST -->
       <section class="">
-        <div class="mt-4 flex justify-center gap-6">
-          <h1
-            class="px-4 text-base text-center mb-6 t1 custom-border rounded-full"
-          >
+        <!-- <div class="mt-4 flex justify-center gap-6">
+          <h1 class="px-4 text-2xl text-center mb-6 font-semibold">
             My Playlist
           </h1>
+        </div> -->
+
+        <div
+          class="py-3 flex items-center text-2xl font-semibold mb-2 before:flex-1 before:border-t before:border-gray-400 before:me-6 after:flex-1 after:border-t after:border-gray-400 after:ms-6"
+        >
+          My Playlist
         </div>
 
         <iframe
@@ -106,49 +107,46 @@
         </div> -->
 
         <div
-          class="flex justify-center gap-6 mb-6 items-center text-[22px] sm:text-2xl px-6"
+          class="flex justify-center gap-6 mb-6 items-center text-[22px] sm:text-2xl px-6 text-gray-400"
         >
           <a
             href="https://github.com/andieewu"
             target="_blank"
             rel="noopener noreferrer"
-            class="p-1 custom-border rounded-md"
+            class="hover:text-black"
           >
-            <i class="fa-brands fa-github"></i>
+            <i class="ri-github-fill"></i>
           </a>
 
           <a
             href="https://www.youtube.com/@andieewu"
             target="_blank"
             rel="noopener noreferrer"
-            class="p-1 custom-border rounded-md"
+            class="hover:text-black"
           >
-            <i class="fa-brands fa-youtube"></i>
+            <i class="ri-youtube-fill"></i>
           </a>
 
           <a
             href="https://www.instagram.com/andieewu"
             target="_blank"
             rel="noopener noreferrer"
-            class="p-1 custom-border rounded-md"
+            class="hover:text-black"
           >
-            <i class="fa-brands fa-instagram"></i>
+            <i class="ri-instagram-fill"></i>
           </a>
 
           <a
-            href="https://open.spotify.com/user/31tncwlk2dnqcgvsjxdb2jb3qryy"
+            href="https://discordapp.com/users/1229931778106593431"
             target="_blank"
             rel="noopener noreferrer"
-            class="p-1 custom-border rounded-md"
+            class="hover:text-black"
           >
-            <i class="fa-brands fa-spotify"></i>
+            <i class="ri-discord-fill"></i>
           </a>
 
-          <a
-            href="mailto:wisnumurtiandika@gmail.com"
-            class="p-1 custom-border rounded-md"
-          >
-            <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:wisnumurtiandika@gmail.com" class="hover:text-black">
+            <i class="ri-mail-fill"></i>
           </a>
         </div>
 
