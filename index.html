@@ -31,26 +31,65 @@
       <div
         class="max-w-xl mx-auto px-6 h-14 mt-2 flex items-center justify-end"
       >
+        <!-- wrapper tombol + menu -->
         <div
-          class="flex items-center gap-1 rounded-full bg-gray-500/20 dark:bg-gray-700/30 backdrop-blur p-1"
+          id="navWrapper"
+          class="relative flex items-center gap-1 rounded-full bg-gray-500/20 dark:bg-gray-700/30 backdrop-blur p-1"
         >
+          <!-- tombol theme -->
           <button
             id="themeToggle"
             class="w-8 h-8 rounded-full hover:text-black dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600/50 transition"
           >
             <i class="ri-moon-line text-xl"></i>
           </button>
-
+          <!-- tombol menu -->
           <button
             id="menuToggle"
             class="w-8 h-8 rounded-full hover:text-black dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-600/50 transition"
           >
             <i class="ri-menu-line text-xl"></i>
           </button>
+
+          <!-- MENU ITEMS -->
+          <div
+            id="menuPanel"
+            class="absolute top-full right-0 mt-2 min-w-[160px] p-3 rounded-2xl bg-white/80 dark:bg-neutral-800/80 backdrop-blur shadow-lg transition-all duration-300 ease-out translate-x-full opacity-0 pointer-events-none"
+          >
+            <ul class="space-y-2 text-sm text-gray-700 dark:text-gray-200">
+              <li>
+                <a
+                  href="#hero"
+                  class="block px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-neutral-700"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-neutral-700"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#works"
+                  class="block px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-neutral-700"
+                  >Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block px-2 py-1 rounded hover:bg-gray-200 dark:hover:bg-neutral-700"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>
-
     <div class="mx-auto max-w-xl px-6">
       <!-- HERO -->
       <section class="min-h-screen flex items-center justify-center">

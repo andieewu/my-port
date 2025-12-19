@@ -19,6 +19,39 @@ toggle.addEventListener("click", () => {
   }
 });
 
+const menuToggle = document.getElementById("menuToggle");
+const menuPanel = document.getElementById("menuPanel");
+
+menuToggle.addEventListener("click", () => {
+  const isOpen = menuPanel.classList.contains("translate-x-full");
+  if (isOpen) {
+    // buka
+    menuPanel.classList.remove(
+      "translate-x-full",
+      "opacity-0",
+      "pointer-events-none"
+    );
+  } else {
+    // tutup
+    menuPanel.classList.add(
+      "translate-x-full",
+      "opacity-0",
+      "pointer-events-none"
+    );
+  }
+});
+
+document.addEventListener("click", (e) => {
+  const wrapper = document.getElementById("navWrapper");
+  if (!wrapper.contains(e.target)) {
+    menuPanel.classList.add(
+      "translate-x-full",
+      "opacity-0",
+      "pointer-events-none"
+    );
+  }
+});
+
 const spotify = document.getElementById("spotify");
 
 function setSpotifyTheme() {
