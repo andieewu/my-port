@@ -1,0 +1,97 @@
+*,
+body {
+  font-family: "Lato", sans-serif;
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll {
+  --scroll-border: #6b7280;
+  --scroll-border-hover: #000;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: relative;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+}
+
+.scroll::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 9px;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid var(--scroll-border);
+  border-bottom: 2px solid var(--scroll-border);
+  transform: rotate(-45deg);
+  transition: all 0.3s ease;
+}
+
+.scroll,
+.scroll::before {
+  transition: all 0.3s ease;
+}
+
+.scroll:hover::before {
+  border-left-color: var(--scroll-border-hover);
+  border-bottom-color: var(--scroll-border-hover);
+}
+
+.dark .scroll {
+  --scroll-border: #6b7280;
+  --scroll-border-hover: #fff;
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+@-webkit-keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
+
+.glow-subtle {
+  transition: box-shadow 0.3s ease, text-shadow 0.3s ease;
+}
+/* .glow-subtle:hover {
+  box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+} */
+.dark .glow-subtle:hover {
+  box-shadow: 0 0 8px 4px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.25);
+}
+
+.glow-text {
+  transition: text-shadow 0.3s ease;
+}
+/* .glow-text:hover {
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.25), 0 0 8px rgba(0, 0, 0, 0.15);
+} */
+
+.dark .glow-text:hover {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.25),
+    0 0 8px rgba(255, 255, 255, 0.15);
+}
