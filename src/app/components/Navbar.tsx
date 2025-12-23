@@ -27,11 +27,11 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50">
       <div className="w-full max-w-xl mx-auto md:mx-0 md:ml-auto px-6 h-14 mt-2 flex items-center justify-end gap-2 animate__animated animate__slideInDown animate__delay-2s">
         <div className="flex items-center gap-2">
-          <div className="relative flex items-center rounded-full bg-gray-500/20 dark:bg-gray-700/30 backdrop-blur-md p-1 transition-all duration-300 hover:scale-105">
+          <div className="relative flex items-center rounded-full bg-gray-500/20 dark:bg-gray-700/30 backdrop-blur-md p-1 transition-all duration-500 hover:scale-110 ">
             <button
               onClick={toggleTheme}
               aria-label="Toggle theme"
-              className="w-8 h-8 flex items-center justify-center rounded-full dark:text-white transition-all duration-300"
+              className="w-8 h-8 flex items-center justify-center rounded-full dark:text-white cursor-pointer"
             >
               <i
                 className={
