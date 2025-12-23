@@ -1,65 +1,107 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="mx-auto max-w-xl px-6">
+      {/* HERO */}
+      <section
+        id="home"
+        className="min-h-screen flex items-center justify-center"
+      >
+        <div className="text-center w-full">
+          <div className="w-[120px] h-[120px] mx-auto mb-2 sm:mb-4 rounded-full bg-[url('/assets/img/profile.jpg')] bg-cover bg-center text-focus-in transition-transform duration-300 hover:shadow-black"></div>
+
+          <h1 className="text-3xl font-bold t1 sm:text-5xl md:text-6xl focus-in-expand">
+            Andika Wisnumurti
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <div className="mt-2 sm:mt-4 flex justify-center gap-2 sm:gap-4 text-gray-500 dark:text-gray-400 text-focus-in">
+            <p className="px-4 text-[14px] sm:text-base border border-gray-500 rounded-full hover:border-transparent hover:text-white hover:bg-neutral-900 dark:border-gray-400 dark:hover:border-transparent dark:hover:text-black dark:hover:bg-white glow-subtle transition-all duration-300">
+              Frontend Developer
+            </p>
+            <p className="px-4 text-[14px] sm:text-base border border-gray-500 rounded-full hover:border-transparent hover:text-white hover:bg-neutral-900 dark:border-gray-400 dark:hover:border-transparent dark:hover:text-black dark:hover:bg-white glow-subtle transition-all duration-300">
+              AI Engineer
+            </p>
+          </div>
+
+          <p className="mt-2 sm:mt-4 t2 text-focus-in">
+            I'm a passionate frontend developer with a strong foundation in web
+            development. I'm always eager to learn new technologies and improve
+            my skills.
           </p>
+
+          <div className="mt-4 roll-in-blurred-bottom">
+            <a
+              href="mailto:wisnumurtiandika@gmail.com"
+              className="p-2 font-semibold transition-all duration-300 underline text-gray-500 dark:text-gray-400 hover:text-black dark:hover:text-white inline-block glow-text"
+            >
+              Get in touch!
+            </a>
+          </div>
+
+          <div className="flex items-center justify-center roll-in-blurred-bottom">
+            <a
+              href="#"
+              className="scroll cursor-pointer"
+              aria-label="Scroll down"
+            ></a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+      </section>
+
+      {/* BADGE */}
+      <div className="mt-4 flex justify-center gap-6 text-focus-in">
+        <p className="px-4 text-center mb-6">
+          This website is not completely finished yet.
+        </p>
+      </div>
+
+      {/* FOOTER */}
+      <footer className="text-center py-6 text-sm t2 text-focus-in">
+        <div className="flex justify-center gap-6 mb-6 items-center text-[22px] sm:text-2xl px-6 text-gray-400">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/andieewu"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-black dark:hover:text-white transition-all duration-300 hover:scale-110 hover:rotate-6 glow-text"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            <i className="ri-github-fill"></i>
           </a>
+
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://www.youtube.com/@andieewu"
             target="_blank"
             rel="noopener noreferrer"
+            className="hover:text-black dark:hover:text-white transition-all duration-300 hover:scale-110 hover:rotate-6 glow-text"
           >
-            Documentation
+            <i className="ri-youtube-fill"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/andieewu"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black dark:hover:text-white transition-all duration-300 hover:scale-110 hover:rotate-6 glow-text"
+          >
+            <i className="ri-instagram-fill"></i>
+          </a>
+
+          <a
+            href="https://discordapp.com/users/1229931778106593431"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-black dark:hover:text-white transition-all duration-300 hover:scale-110 hover:rotate-6 glow-text"
+          >
+            <i className="ri-discord-fill"></i>
+          </a>
+
+          <a
+            href="mailto:wisnumurtiandika@gmail.com"
+            className="hover:text-black dark:hover:text-white transition-all duration-300 hover:scale-110 hover:rotate-6 glow-text"
+          >
+            <i className="ri-mail-fill"></i>
           </a>
         </div>
-      </main>
+        © 2025 Andika Wisnumurti. All rights reserved.
+      </footer>
     </div>
   );
 }
