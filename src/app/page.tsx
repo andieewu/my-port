@@ -17,7 +17,8 @@ export default function Home() {
               alt="Profile"
               width={120}
               height={120}
-              className="object-cover"
+              className="object-cover pointer-events-none select-none"
+              draggable="false"
             />
           </div>
 
@@ -35,9 +36,9 @@ export default function Home() {
           </div>
 
           <p className="mt-2 sm:mt-4 t2 text-focus-in">
-            I'm a passionate frontend developer with a strong foundation in web
-            development. I'm always eager to learn new technologies and improve
-            my skills.
+            18yo frontend dev who loves building cool stuff on the web. Always
+            down to learn new tech and leveling up my skills one line of code at
+            a time.
           </p>
 
           <div className="mt-4 roll-in-blurred-bottom">
@@ -79,7 +80,7 @@ export default function Home() {
             href="https://github.com/andieewu"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-black dark:hover:text-white hover:scale-110 glow-text transition-all duration-300"
+            className="hover:text-black dark:hover:text-white hover:scale-105 glow-text transition-all duration-500"
           >
             <i className="ri-github-fill"></i>
           </a>
@@ -88,7 +89,7 @@ export default function Home() {
             href="https://www.youtube.com/@andieewu"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-black dark:hover:text-white hover:scale-110 glow-text transition-all duration-300"
+            className="hover:text-black dark:hover:text-white hover:scale-105 glow-text transition-all duration-500"
           >
             <i className="ri-youtube-fill"></i>
           </a>
@@ -97,7 +98,7 @@ export default function Home() {
             href="https://www.instagram.com/andieewu"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-black dark:hover:text-white hover:scale-110 glow-text transition-all duration-300"
+            className="hover:text-black dark:hover:text-white hover:scale-105 glow-text transition-all duration-500"
           >
             <i className="ri-instagram-fill"></i>
           </a>
@@ -106,14 +107,14 @@ export default function Home() {
             href="https://discordapp.com/users/1229931778106593431"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-black dark:hover:text-white hover:scale-110 glow-text transition-all duration-300"
+            className="hover:text-black dark:hover:text-white hover:scale-105 glow-text transition-all duration-500"
           >
             <i className="ri-discord-fill"></i>
           </a>
 
           <a
             href="mailto:wisnumurtiandika@gmail.com"
-            className="hover:text-black dark:hover:text-white hover:scale-110 glow-text transition-all duration-300"
+            className="hover:text-black dark:hover:text-white hover:scale-105 glow-text transition-all duration-500"
           >
             <i className="ri-mail-fill"></i>
           </a>
